@@ -78,6 +78,8 @@
   .mark .family a { opacity: 1; color: #a8a8ad; font-size: inherit; letter-spacing: inherit; border-bottom-color: transparent; padding: 5px 0 1px; }
   .mark .family a:hover { color: #fff; border-bottom-color: rgba(255, 255, 255, 0.6); }
   .photo { background: #000 url("bg-sunset-3200.jpg") center 58% / cover no-repeat; }
+  footer { display: flex; align-items: flex-end; justify-content: center; padding: 0 clamp(20px, 4vw, 48px) clamp(14px, 3vh, 28px); }
+  .offices { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; color: #8f8f94; text-align: center; }
   @media (prefers-reduced-motion: reduce) { .mark a { transition: none; } }
 </style>
 </head>
@@ -90,7 +92,7 @@
   </div>
 </header>
 <main class="photo" role="img" aria-label="Sunset over a frozen lake"></main>
-<footer></footer>
+<footer><p class="offices">Offices in Saranac Lake NY &amp; Shelburne VT</p></footer>
 <script>
   // Touch screens have no mouse-over: a tap on the logo shows or hides the link.
   document.querySelector(".logo").addEventListener("click", function () {
