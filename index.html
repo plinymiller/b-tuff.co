@@ -74,7 +74,7 @@
 <style>
   * { box-sizing: border-box; }
   html, body { height: 100%; }
-  body { margin: 0; background: #000; color: #fff; font: 16px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; overflow: hidden; display: grid; grid-template-rows: 22vh 56vh 22vh; }
+  body { margin: 0; background: #0A0D12 url("btuff-hero-dark-1920x1080.jpg") center / cover no-repeat; color: #fff; font: 16px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; overflow: hidden; display: grid; grid-template-rows: 22vh 56vh 22vh; }
   header { display: flex; align-items: center; padding: 0 clamp(20px, 4vw, 48px); }
   .mark { display: inline-flex; flex-direction: column; gap: 10px; align-items: flex-start; padding: 6px 24px 6px 0; cursor: default; }
   h1 { margin: 0; }
@@ -86,7 +86,7 @@
   .family { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; color: #8f8f94; display: flex; flex-wrap: wrap; gap: 0 1.3em; }
   .mark .family a { opacity: 1; color: #a8a8ad; font-size: inherit; letter-spacing: inherit; border-bottom-color: transparent; padding: 5px 0 1px; }
   .mark .family a:hover { color: #fff; border-bottom-color: rgba(255, 255, 255, 0.6); }
-  .photo { background: #000 url("bg-sunset-3200.jpg") center 58% / cover no-repeat; }
+  .photo { background: transparent; }
   footer { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; padding: 0 clamp(20px, 4vw, 48px) clamp(14px, 3vh, 28px); }
   .offices { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; color: #8f8f94; text-align: center; }
   .social { width: 100%; }
@@ -109,7 +109,7 @@
     <a href="mailto:info@b-tuff.co">Contact us</a>
   </div>
 </header>
-<main class="photo" role="img" aria-label="Sunset over a frozen lake"></main>
+<main class="photo" aria-hidden="true"></main>
 <footer>
   <nav id="socials" class="social" aria-label="B-Tuff on social media">
     <noscript>
