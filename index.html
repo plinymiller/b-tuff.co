@@ -104,26 +104,28 @@
     .mark a, .social-list a { transition: none; }
   }
 .pm-loc{white-space:nowrap}.pm-mark{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.2em;margin:0 .15em}
-  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 8px 0 0; max-width: 100%; }
-  .mark a.book-btn,
-  .mark a.pricing-btn {
+  .actions { align-self: flex-start; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 8px; margin: 0 0 10px; max-width: 100%; }
+  .actions a {
+    flex: 0 0 auto;
     opacity: 1;
+    text-decoration: none;
     border-radius: 2px;
     padding: 8px 14px;
-    margin-top: 0;
     letter-spacing: 0.08em;
     font-size: 0.8rem;
     line-height: 1.4;
   }
-  .mark a.book-btn {
+  .actions a.book-btn {
     background: #fff;
     color: #0A0D12;
     border: 1px solid #fff;
   }
-  .mark a.book-btn:hover,
-  .mark a.book-btn:focus-visible { background: transparent; color: #fff; }
-  .mark a.pricing-btn { border: 1px solid rgba(255, 255, 255, 0.75); }
-  .mark a.pricing-btn:hover { background: rgba(255, 255, 255, 0.1); border-color: #fff; }
+  .actions a.book-btn:hover,
+  .actions a.book-btn:focus-visible { background: transparent; color: #fff; }
+  .actions a.pricing-btn { color: #fff; border: 1px solid rgba(255, 255, 255, 0.75); }
+  .actions a.pricing-btn:hover,
+  .actions a.pricing-btn:focus-visible { background: rgba(255, 255, 255, 0.1); border-color: #fff; }
+  .actions a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
   .legal { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; text-align: center; }
   .legal a { color: #a8a8ad; text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 1px; }
   .legal a:hover { color: #fff; border-bottom-color: rgba(255, 255, 255, 0.6); }
@@ -136,14 +138,14 @@
     <h1><img class="logo" src="btuff-logo-white.png" width="1185" height="138" alt="B-Tuff"></h1>
     <p class="family"><a href="https://plinymiller.com/">Pliny Miller Design</a><a href="https://891consulting.com/">891 Consulting</a><a href="https://prep4me.app/">Prep4Me</a></p>
     <a href="mailto:info@b-tuff.co">Contact us</a>
-    <p class="actions">
-      <a class="book-btn" href="/book/">Book a call</a>
-      <a class="pricing-btn" href="mailto:info@b-tuff.co?subject=Pricing%20request">Email for pricing</a>
-    </p>
   </div>
 </header>
 <main class="photo" aria-hidden="true"></main>
 <footer>
+  <p class="actions">
+    <a class="book-btn" href="/book/">Book a call</a>
+    <a class="pricing-btn" href="mailto:info@b-tuff.co?subject=Pricing%20request">Email for pricing</a>
+  </p>
   <nav id="socials" class="social" aria-label="B-Tuff on social media">
     <noscript>
       <ul class="social-list">
