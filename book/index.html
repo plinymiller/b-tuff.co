@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://app.cal.com 'sha256-WBbrd3PLz6yuGbO6t/OnpvwKXNP3p+R218hwZ2ByPPA=' 'sha256-z6VHzEgU2Vj7ZBzwS0JAZ/VCIog9vQlM2hVxeqvg0O8=' 'sha256-9efvyxJpOzrUd1h+Ns+T7jcf7cMoeGPZycmUDho126U='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://app.cal.com https://cal.com; font-src 'self'; connect-src 'self' https://app.cal.com; frame-src https://app.cal.com https://cal.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Book a free 15-minute call | B-Tuff</title>
+<meta name="description" content="Not sure where to start? Pick a time that works for you. We'll talk for 15 minutes about what you need and whether B-Tuff, 891 Consulting, or Pliny Miller Design is the right fit. It's free, with no obligation. You'll get a Google Meet link and a reminder by email.">
+<link rel="canonical" href="https://b-tuff.co/book/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="B-Tuff LLC">
+<meta name="theme-color" content="#0a0d12">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="B-Tuff">
+<meta property="og:title" content="Book a free 15-minute call | B-Tuff">
+<meta property="og:description" content="Not sure where to start? Pick a time that works for you. We'll talk for 15 minutes about what you need and whether B-Tuff, 891 Consulting, or Pliny Miller Design is the right fit. It's free, with no obligation. You'll get a Google Meet link and a reminder by email.">
+<meta property="og:url" content="https://b-tuff.co/book/">
+<meta property="og:image" content="https://b-tuff.co/btuff-og-1200x630.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="B-Tuff wordmark on a dark background, with the line Built around how you actually work.">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Book a free 15-minute call | B-Tuff">
+<meta name="twitter:description" content="Not sure where to start? Pick a time that works for you. We'll talk for 15 minutes about what you need and whether B-Tuff, 891 Consulting, or Pliny Miller Design is the right fit. It's free, with no obligation. You'll get a Google Meet link and a reminder by email.">
+<meta name="twitter:image" content="https://b-tuff.co/btuff-og-1200x630.png">
+<meta name="twitter:image:alt" content="B-Tuff wordmark on a dark background, with the line Built around how you actually work.">
+
+<meta name="apple-mobile-web-app-title" content="B-Tuff">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<style>
+  * { box-sizing: border-box; }
+  html { height: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #0A0D12 url("/btuff-hero-dark-1920x1080.jpg") center / cover no-repeat;
+    color: #fff;
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; height: auto; }
+  header { display: flex; align-items: flex-start; width: 100%; padding: clamp(20px, 4vh, 40px) clamp(20px, 4vw, 48px) 8px; }
+  .mark { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; max-width: 100%; }
+  .logo-link { display: inline-block; line-height: 0; border-radius: 2px; }
+  .logo-link:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+  .logo { display: block; width: clamp(200px, 26vw, 360px); height: auto; }
+  .family { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; color: #8f8f94; display: flex; flex-wrap: wrap; gap: 0 1.3em; }
+  .family a { color: #a8a8ad; text-decoration: none; border-bottom: 1px solid transparent; padding: 5px 0 1px; }
+  .family a:hover { color: #fff; border-bottom-color: rgba(255, 255, 255, 0.6); }
+  .family a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+  .text-link { color: #fff; font-size: 0.85rem; letter-spacing: 0.04em; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.6); padding-bottom: 1px; }
+  .text-link:hover { border-bottom-color: #fff; }
+  .text-link:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0; max-width: 100%; }
+  .actions a { text-decoration: none; border-radius: 2px; padding: 8px 14px; letter-spacing: 0.08em; font-size: 0.8rem; line-height: 1.4; }
+  .book-btn { background: #fff; color: #0A0D12; border: 1px solid #fff; }
+  .book-btn:hover, .book-btn:focus-visible { background: transparent; color: #fff; }
+  .pricing-btn { color: #fff; border: 1px solid rgba(255, 255, 255, 0.75); }
+  .pricing-btn:hover, .pricing-btn:focus-visible { background: rgba(255, 255, 255, 0.1); border-color: #fff; }
+  .actions a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+  main { flex: 1 0 auto; width: min(880px, 100%); padding: 12px clamp(20px, 4vw, 48px) 48px; }
+  h1 { margin: 0 0 12px; font-size: clamp(1.7rem, 4vw, 2.25rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; }
+  .lede { margin: 0 0 28px; max-width: 40rem; color: #e8e8ea; font-size: 1.05rem; }
+  .cal-embed {
+    width: 100%;
+    min-height: 480px;
+    height: auto;
+    margin: 0 0 20px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  /* Let Cal.com's measured iframe height define the card, so the page
+     scrolls instead of trapping a second scrollbar inside the embed. */
+  .cal-embed > cal-inline {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .cal-embed iframe {
+    display: block;
+    width: 100% !important;
+    min-height: 0 !important;
+    max-width: 100%;
+    border: 0;
+    background: #fff;
+  }
+  .fallback { margin: 0 0 8px; color: #c8c8cc; font-size: 0.95rem; overflow-wrap: anywhere; }
+  .fallback a, .prose a { color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.6); padding-bottom: 1px; }
+  .fallback a:hover, .prose a:hover { border-bottom-color: #fff; }
+  .fallback a:focus-visible, .prose a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+  .prose p { margin: 0 0 16px; max-width: 40rem; color: #e8e8ea; }
+  footer { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; padding: 8px clamp(20px, 4vw, 48px) clamp(14px, 3vh, 28px); }
+  .offices { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; color: #8f8f94; text-align: center; }
+  .social { width: 100%; }
+  .social-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2px 4px; }
+  .social-list a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #fff; opacity: 0.82; border-radius: 50%; text-decoration: none; transition: opacity .2s ease, background-color .2s ease; }
+  .social-list a:hover { opacity: 1; background: rgba(255, 255, 255, 0.1); }
+  .social-list a:focus-visible { opacity: 1; outline: 2px solid #fff; outline-offset: 3px; }
+  .social-list svg { width: 22px; height: 22px; fill: currentColor; display: block; pointer-events: none; }
+  .social-list .noscript-label { font-size: 0.8rem; letter-spacing: 0.04em; }
+  .legal { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; text-align: center; }
+  .legal a { color: #a8a8ad; text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 1px; }
+  .legal a:hover, .legal a[aria-current="page"] { color: #fff; border-bottom-color: rgba(255, 255, 255, 0.6); }
+  .legal a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+  .pm-loc{white-space:nowrap}.pm-mark{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.2em;margin:0 .15em}
+  @media (min-width: 800px) {
+    body { background-attachment: fixed; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .social-list a { transition: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="mark">
+    <a class="logo-link" href="/"><img class="logo" src="/btuff-logo-white.png" width="1185" height="138" alt="B-Tuff"></a>
+    <p class="family"><a href="https://plinymiller.com/">Pliny Miller Design</a><a href="https://891consulting.com/">891 Consulting</a><a href="https://prep4me.app/">Prep4Me</a></p>
+    <a class="text-link" href="mailto:info@b-tuff.co">Contact us</a>
+    <p class="actions">
+      <a class="book-btn" href="/book/" aria-current="page">Book a call</a>
+      <a class="pricing-btn" href="mailto:info@b-tuff.co?subject=Pricing%20request">Email for pricing</a>
+    </p>
+  </div>
+</header>
+<main id="book">
+  <h1>Book a free 15-minute call</h1>
+  <p class="lede">Not sure where to start? Pick a time that works for you. We'll talk for 15 minutes about what you need and whether B-Tuff, 891 Consulting, or Pliny Miller Design is the right fit. It's free, with no obligation. You'll get a Google Meet link and a reminder by email.</p>
+  <!-- Cal inline embed code begins -->
+  <div id="my-cal-inline-15min" class="cal-embed"></div>
+  <script type="text/javascript">
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "15min", {origin:"https://app.cal.com"});
+Cal.config = Cal.config || {};
+Cal.config.forwardQueryParams = true;
+
+Cal.ns["15min"]("inline", {
+  elementOrSelector:"#my-cal-inline-15min",
+  config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+  calLink: "b-tuff/15min",
+});
+
+Cal.ns["15min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+</script>
+  <!-- Cal inline embed code ends -->
+  <p class="fallback">Prefer email? Write to <a href="mailto:brian@b-tuff.co">brian@b-tuff.co</a>.</p>
+  <p class="fallback">If the calendar does not load, book at <a href="https://cal.com/b-tuff/15min">https://cal.com/b-tuff/15min</a>.</p>
+</main>
+<footer>
+  <nav id="socials" class="social" aria-label="B-Tuff on social media">
+    <noscript>
+      <ul class="social-list">
+        <li><a class="noscript-label" href="https://www.instagram.com/btuffllc/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a class="noscript-label" href="https://www.facebook.com/people/B-Tuff-LLC/61597159070510/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a class="noscript-label" href="https://www.youtube.com/@btuffllc" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+        <li><a class="noscript-label" href="https://rumble.com/c/c-7992626" target="_blank" rel="noopener noreferrer">Rumble</a></li>
+        <li><a class="noscript-label" href="https://www.alignable.com/shelburne-vt/b-tuff-llc" target="_blank" rel="noopener noreferrer">Alignable</a></li>
+      </ul>
+    </noscript>
+  </nav>
+  <p class="offices pm-loc">Saranac Lake NY <svg class="pm-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1.15em" height="1.15em" role="img" aria-label="Pliny Miller" focusable="false"><title>Pliny Miller</title><path fill="currentColor" fill-rule="evenodd" d="M0 0H16V16H0ZM2.4 3.4H7.3V8.6H4.3V12.6H2.4ZM4.3 5.1V6.9H5.5V5.1ZM8.2 3.4H10.1L11.05 6.6L12 3.4H13.9V12.6H12.2V7.4L11.05 10.4L9.9 7.4V12.6H8.2Z"/></svg> Shelburne VT</p>
+  <p class="legal"><a href="/privacy/">Privacy</a></p>
+</footer>
+<!-- Set enabled to true to show a platform once its @btuffllc account is live. Also add that URL to Organization.sameAs above. -->
+<script type="application/json" id="socials-config">
+[
+  {"platform": "Instagram", "url": "https://www.instagram.com/btuffllc/", "enabled": true},
+  {"platform": "TikTok", "url": "https://www.tiktok.com/@btuffllc", "enabled": false},
+  {"platform": "X", "url": "https://x.com/btuffllc", "enabled": false},
+  {"platform": "Facebook", "url": "https://www.facebook.com/people/B-Tuff-LLC/61597159070510/", "enabled": true},
+  {"platform": "YouTube", "url": "https://www.youtube.com/@btuffllc", "enabled": true},
+  {"platform": "Rumble", "url": "https://rumble.com/c/c-7992626", "enabled": true},
+  {"platform": "Alignable", "url": "https://www.alignable.com/shelburne-vt/b-tuff-llc", "enabled": true}
+]
+</script>
+<script>
+  var SOCIAL_ICONS = {
+    Instagram: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm0 7.92A3.12 3.12 0 1 1 15.12 12 3.12 3.12 0 0 1 12 15.12zM17.88 6.89a1.12 1.12 0 1 0 1.12 1.12 1.12 1.12 0 0 0-1.12-1.12zM12 4.4c-2.07 0-2.33.01-3.14.05a4.86 4.86 0 0 0-1.62.3 3.2 3.2 0 0 0-1.17.76 3.2 3.2 0 0 0-.76 1.17 4.86 4.86 0 0 0-.3 1.62c-.04.81-.05 1.07-.05 3.14s.01 2.33.05 3.14a4.86 4.86 0 0 0 .3 1.62 3.2 3.2 0 0 0 .76 1.17 3.2 3.2 0 0 0 1.17.76 4.86 4.86 0 0 0 1.62.3c.81.04 1.07.05 3.14.05s2.33-.01 3.14-.05a4.86 4.86 0 0 0 1.62-.3 3.2 3.2 0 0 0 1.17-.76 3.2 3.2 0 0 0 .76-1.17 4.86 4.86 0 0 0 .3-1.62c.04-.81.05-1.07.05-3.14s-.01-2.33-.05-3.14a4.86 4.86 0 0 0-.3-1.62 3.2 3.2 0 0 0-.76-1.17 3.2 3.2 0 0 0-1.17-.76 4.86 4.86 0 0 0-1.62-.3c-.81-.04-1.07-.05-3.14-.05zm0 1.44c2.03 0 2.27.01 3.07.05a3.4 3.4 0 0 1 1.13.21 1.76 1.76 0 0 1 .98.98 3.4 3.4 0 0 1 .21 1.13c.04.8.05 1.04.05 3.07s-.01 2.27-.05 3.07a3.4 3.4 0 0 1-.21 1.13 1.76 1.76 0 0 1-.98.98 3.4 3.4 0 0 1-1.13.21c-.8.04-1.04.05-3.07.05s-2.27-.01-3.07-.05a3.4 3.4 0 0 1-1.13-.21 1.76 1.76 0 0 1-.98-.98 3.4 3.4 0 0 1-.21-1.13c-.04-.8-.05-1.04-.05-3.07s.01-2.27.05-3.07a3.4 3.4 0 0 1 .21-1.13 1.76 1.76 0 0 1 .98-.98 3.4 3.4 0 0 1 1.13-.21c.8-.04 1.04-.05 3.07-.05z"/></svg>',
+    TikTok: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.76.14 2.89 2.89 0 0 1 2.88-2.88c.28 0 .55.04.81.1V9.01a6.33 6.33 0 0 0-.81-.05A6.34 6.34 0 0 0 3.25 15.3 6.34 6.34 0 0 0 9.59 21.64a6.34 6.34 0 0 0 6.34-6.34V8.73a8.28 8.28 0 0 0 4.77 1.52V6.79a4.86 4.86 0 0 1-1.11-.1z"/></svg>',
+    X: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 3.5h2.67l-5.84 6.67 6.87 9.33h-5.38l-4.21-5.5-4.82 5.5H4.86l6.24-7.13L4.5 3.5h5.52l3.8 5.03L18.24 3.5zm-.94 14.4h1.48L7.76 5.01H6.17l11.13 12.89z"/></svg>',
+    Facebook: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 8.6V6.9c0-.56.12-.78.9-.78h1.5V3.5h-2.07c-2.52 0-3.73 1.54-3.73 3.9v1.2H9v2.62h1.8V20.5h3.4V11.22h2.25l.35-2.62h-2.6z"/></svg>',
+    YouTube: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 7.2a3.12 3.12 0 0 0-2.2-2.21C19.5 4.6 12 4.6 12 4.6s-7.5 0-9.3.39A3.12 3.12 0 0 0 .5 7.2 32.6 32.6 0 0 0 .1 12a32.6 32.6 0 0 0 .4 4.8 3.12 3.12 0 0 0 2.2 2.21c1.8.39 9.3.39 9.3.39s7.5 0 9.3-.39a3.12 3.12 0 0 0 2.2-2.21A32.6 32.6 0 0 0 23.9 12a32.6 32.6 0 0 0-.4-4.8zM9.75 15.43V8.57L15.84 12l-6.09 3.43z"/></svg>',
+    Rumble: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.4a9.6 9.6 0 1 0 0 19.2 9.6 9.6 0 0 0 0-19.2zm-1.7 5.47 7.05 4.07a.12.12 0 0 1 0 .21l-7.05 4.07a.12.12 0 0 1-.18-.1V7.97a.12.12 0 0 1 .18-.1z"/></svg>',
+    Alignable: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2 4.6 20.8h3.02l1.48-3.52h6.8l1.48 3.52H20.4L12 3.2zm0 4.66 2.42 5.78H9.58L12 7.86z"/></svg>'
+  };
+
+  (function renderSocials() {
+    var nav = document.getElementById("socials");
+    var cfgEl = document.getElementById("socials-config");
+    if (!nav || !cfgEl) return;
+    var config;
+    try { config = JSON.parse(cfgEl.textContent); } catch (e) { return; }
+    var ul = document.createElement("ul");
+    ul.className = "social-list";
+    config.forEach(function (item) {
+      if (!item || !item.enabled || !item.url || !SOCIAL_ICONS[item.platform]) return;
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = item.url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.setAttribute("aria-label", "B-Tuff on " + item.platform + " (opens in a new tab)");
+      a.innerHTML = SOCIAL_ICONS[item.platform];
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    if (ul.childNodes.length) nav.appendChild(ul);
+  })();
+</script>
+</body>
+</html>
