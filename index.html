@@ -92,7 +92,7 @@
   .mark .family a:hover { color: #fff; border-bottom-color: rgba(255, 255, 255, 0.6); }
   .photo { background: transparent; }
   footer { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; padding: 0 clamp(20px, 4vw, 48px) clamp(14px, 3vh, 28px); }
-  .offices { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; color: #8f8f94; text-align: center; }
+  .offices { margin: 0; font-size: 0.72rem; letter-spacing: 0.05em; color: #8f8f94; text-align: center; }
   .social { width: 100%; }
   .social-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2px 4px; }
   .social-list a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #fff; opacity: 0.82; border-radius: 50%; text-decoration: none; transition: opacity .2s ease, background-color .2s ease; }
@@ -115,16 +115,19 @@
     font-size: 0.8rem;
     line-height: 1.4;
   }
-  .actions a.book-btn {
-    background: #fff;
-    color: #0A0D12;
-    border: 1px solid #fff;
+  .actions a.book-btn,
+  .actions a.pricing-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.75);
   }
   .actions a.book-btn:hover,
-  .actions a.book-btn:focus-visible { background: transparent; color: #fff; }
-  .actions a.pricing-btn { color: #fff; border: 1px solid rgba(255, 255, 255, 0.75); }
+  .actions a.book-btn:focus-visible,
   .actions a.pricing-btn:hover,
-  .actions a.pricing-btn:focus-visible { background: rgba(255, 255, 255, 0.1); border-color: #fff; }
+  .actions a.pricing-btn:focus-visible {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+  }
   .actions a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
   .legal { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; text-align: center; }
   .legal a { color: #a8a8ad; text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 1px; }
